@@ -18,23 +18,109 @@
 
 <body>
   <header>
-    <div class="menu">
-      <img src="img/logotipo.png" alt="">
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logotipo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Console</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+           
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
 
 
 
-    <section id="section-banners" class="container-fluid">
+    <section id="section-banners"> class="container-fluid"
+      
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Rectangle 10.png" class="d-block w-100" alt="venham comprar na nossa loja">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Rectangle 11.png" class="d-block w-100" alt="promoções de produtos diversos">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Rectangle 12.png" class="d-block w-100" alt="não perca varias novidades">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  
 
       
 
     </section>
     <section id="section-vendidos" class="container-fluid">
 
-      <h2>OS MAIS VENDIDOS</h2>
+      <h2>NOVIDADES E TENDENCIAS DE FUTURO</h2>
+
+
+      <div class="card-group">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Rectangle 73.png" class="card-img-top" alt="jogo de emoção e aventura">
+        <div class="card-body">
+          <H5 class="card-title">JOGO 1</H5>
+          <p class="card-text">MELHOR DO ANO NA CATEGORIA</p>
+          <p class="preco">R$ 199,99</p>
+
+          <a href="#" class="btn btn-primary"> COMPRAR</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Group 21.png" class="card-img-top" alt="jogo de futebol">
+        <div class="card-body">
+          <H5 class="card-title">JOGO 2</H5>
+          <p class="card-text">MELHOR DO ANO NA CATEGORIA</p>
+          <p class="preco">R$ 299,99</p>
+
+          <a href="#" class="btn btn-primary"> COMPRAR</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Rectangle 72.png" class="card-img-top" alt="jogo de carro">
+        <div class="card-body">
+          <H5 class="card-title">JOGO 3</H5>
+          <p class="card-text">MELHOR DO ANO NA CATEGORIA</p>
+          <p class="preco">R$ 399,99</p>
+
+          <a href="#" class="btn btn-primary"> COMPRAR</a>
+        </div>
+      </div>
+      /div>
 
      
     </div>
@@ -44,7 +130,7 @@
   </main>
 
   <footer>
-    <p></p>
+    <p>desenvolvimento por Jtavares Games</p>
   </footer>
 
   <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
